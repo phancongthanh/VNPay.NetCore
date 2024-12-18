@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netcoreapp3.1;net5.0;net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
+		<LangVersion>8.0</LangVersion>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>VNPay.NetCore</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>phancongthanh</Authors>
+		<Company>N/A</Company>
+		<Nullable>enable</Nullable>
+		<PackageTags>dotnet, vnpay</PackageTags>
+		<Description>Thư viện hỗ trợ các thao tác thanh toán với cổng thanh toán VNPay.</Description>
+		<RepositoryUrl>https://github.com/phancongthanh/VNPay.NetCore</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/phancongthanh/VNPay.NetCore</PackageProjectUrl>
+		<LicenseExpression>MIT</LicenseExpression>
+		<OutputType>Library</OutputType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+		<PackageReference Include="System.Net.Http.Json" />
+	</ItemGroup>
+</Project>
