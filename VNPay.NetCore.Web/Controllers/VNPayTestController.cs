@@ -21,7 +21,7 @@ namespace VNPay.NetCore.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<string> CreatePaymentUrl([FromQuery] VNPayRequest request, [FromQuery] string? returnUrl = null)
+        public async Task<string> CreatePaymentUrl([FromBody] VNPayRequest request, [FromQuery] string? returnUrl = null)
         {
             if (string.IsNullOrEmpty(request.RequestCode)) return string.Empty;
             if (string.IsNullOrEmpty(returnUrl))

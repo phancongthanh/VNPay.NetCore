@@ -93,7 +93,7 @@ namespace VNPay.NetCore
                     customData.Add($"user_{item.Key}", item.Value);
 
             // Tạo chuỗi truy vấn URL chứa toàn bộ thông tin giao dịch và chữ ký bảo mật
-            var url = vnpay.CreateRequestUrl($"https://sandbox.vnpayment.vn/paymentv2/vpcpay.html", _options.SecureHash);
+            var url = vnpay.CreateRequestUrl($"{_options.ApiUrl}/paymentv2/vpcpay.html", _options.SecureHash);
 
             // Lưu trữ custome data
             await SetCustomData(request.RequestCode, customData);
